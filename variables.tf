@@ -30,6 +30,13 @@ variable "enforce_subnet_names" {
   default     = true
 }
 
+variable "custom_vnet_name" {
+  description = "Custom VNET name"
+  type        = string
+  default     = ""
+}
+
+  
 # Networking
 variable "address_space" {
   description = "CIDRs for virtual network"
